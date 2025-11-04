@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 – Web Frontend Development | Madelaine Thea Tirazona</title>
+    <meta name="description" content="home page">
+    <meta name="author" content="Madelaine Thea Tirazona">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/clover.svg" alt="site logo" width="1" height="1">
+        <span>Madelaine Thea Tirazona</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation" aria-label="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="student">
+            <section>
+                <h2>About Me</h2>
+                <p>My name is Madelaine Thea Tirazona. I was born in the Philippines. I like trying new things and
+                    exploring
+                    new skills.
+                    I'm also an avid enjoyer of retro adventure and RPG games.</p>
+            </section>
+            <section>
+                <h2>Student Photo</h2>
+                <img src="images/student.webp" photo of Madelaine Thea Tirazona">
+            </section>
+        </div>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="course-category">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-list">
+            </div>
+            <p>The total credits for course listed above is 10</p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/tomatops" target="_blank"><img src="images/github.svg" alt="github logo"
+                    width="1" height="1"></a>
+            <a href="https://www.linkedin.com/in/mtheatirazona/" target="_blank"><img src="images/linkedin.svg"
+                    alt="linkedin logo" width="1" height="1"></a>
+            <a href="https://www.behance.net/tomatops" target="_blank"><img src="images/behance.svg" alt="x logo"
+                    width="1" height="1"></a>
+        </div>
+        <p>© <span id="currentyear"></span> · Madelaine Thea Tirazona · Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+
+
+</body>
+
+</html>

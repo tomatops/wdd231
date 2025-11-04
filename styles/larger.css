@@ -1,0 +1,43 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    section img {
+        width: auto;
+    }
+
+    .student {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .courses {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
