@@ -1,0 +1,18 @@
+{
+    "family_name": "Cruz",
+    "move_in_date": "02-03-2025",
+    "number_of_people": 2,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Kelly Cruz",
+            "gender": "Female",
+            "birthdate": "04-11-1980"
+        },
+        {
+            "name": "Jay Cruz",
+            "gender": "Male",
+            "birthdate": "06-20-1978"
+        }
+    ]
+}

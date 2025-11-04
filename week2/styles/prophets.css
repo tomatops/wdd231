@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet
+}
+
+h2 {
+    font-size: medium;
+    text-align: center;
+    color: blueviolet;
+    font-weight: 800;
+}
+
+img {
+    margin: 15px;
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+}
+
+p {
+    font-size: smaller;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #eee;
+    border: 1px solid rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    background-color: #777;
+    padding: 10px;
+    margin-bottom: 10px;
+}
