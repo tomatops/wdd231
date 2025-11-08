@@ -1,0 +1,12 @@
+{
+    "companies": [
+        {
+            "name": "Gyuu Ramen",
+            "address": "Bellfield St., Calauan",
+            "phone_number": "63-942-353-5393",
+            "website_url": "https://gyuuramen.com",
+            "image_url": "",
+            "membership": 1
+        },
+    ]
+}
