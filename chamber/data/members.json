@@ -5,7 +5,7 @@
             "address": "Bellfield St., Calauan",
             "phone_number": "63-942-353-5393",
             "website_url": "https://gyuuramen.com",
-            "image_url": "https://tomatops.github.io/wdd231/chamber/images/company/ramen.png",
+            "image_url": "images/company/ramen.png",
             "membership": 1
         },
         {
@@ -13,7 +13,7 @@
             "address": "Shellfish St., Calauan",
             "phone_number": "63-956-247-2176",
             "website_url": "https://outofwater.com",
-            "image_url": "https://tomatops.github.io/wdd231/chamber/images/company/fishball.png",
+            "image_url": "images/company/fishball.png",
             "membership": 2
         },
         {
@@ -21,7 +21,7 @@
             "address": "Bluebird St., Calauan",
             "phone_number": "63-934-732-3786",
             "website_url": "https://slurpinjuice.com",
-            "image_url": "https://tomatops.github.io/wdd231/chamber/images/company/drinks.png",
+            "image_url": "images/company/drinks.png",
             "membership": 3
         },
         {
@@ -29,7 +29,7 @@
             "address": "Parkbird St., Calauan",
             "phone_number": "63-945-258-9875",
             "website_url": "https://glongautorepair.com",
-            "image_url": "https://tomatops.github.io/wdd231/chamber/images/company/repair.png",
+            "image_url": "images/company/repair.png",
             "membership": 2
         },
         {
@@ -37,7 +37,7 @@
             "address": "Pineapple St., Calauan",
             "phone_number": "63-976-344-2356",
             "website_url": "https://pinyahardware.com",
-            "image_url": "https://tomatops.github.io/wdd231/chamber/images/company/repair.png",
+            "image_url": "images/company/hardware.png",
             "membership": 1
         },
         {
@@ -45,7 +45,7 @@
             "address": "Gleen St., Calauan",
             "phone_number": "63-905-465-8091",
             "website_url": "https://brightbooks.com",
-            "image_url": "https://tomatops.github.io/wdd231/chamber/images/company/book.png",
+            "image_url": "images/company/book.png",
             "membership": 2
         },
         {
@@ -53,7 +53,7 @@
             "address": "Mollusca St., Calauan",
             "phone_number": "63-987-286-3257",
             "website_url": "https://jamsweets.com",
-            "image_url": "https://tomatops.github.io/wdd231/chamber/images/company/cookies.png",
+            "image_url": "images/company/cookies.png",
             "membership": 1
         }
     ]
