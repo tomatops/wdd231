@@ -170,22 +170,26 @@ section {
 }
 
 /* MAIN */
-#join {
-    position: absolute;
-    position: 1px;
-    border-style: none;
-    padding: 10px 15px;
-    border-radius: 8px;
-    margin: 0 2px;
-}
-
 .hero {
+    position: relative;
     padding: 0;
     margin: 0;
 }
 
 .hero img {
     max-width: 100%;
+}
+
+#join {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    border-style: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 0 2px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 
