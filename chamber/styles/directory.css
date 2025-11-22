@@ -192,6 +192,7 @@ header span {
     margin: 0 2px;
     background-color: var(--primary-color);
     color: var(--text-color);
+    font-size: larger;
 }
 
 #join:hover {
