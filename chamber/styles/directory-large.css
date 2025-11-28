@@ -50,6 +50,24 @@
         color: var(--accent-color);
     }
 
+    /* HOME */
+    .info-cards {
+        display: grid;
+        grid-template-columns: 2fr repeat(2, 1fr);
+    }
+
+    .current-weather {
+        figure {
+            margin: .3rem;
+        }
+    }
+
+    .weather-forecast {
+        ul {
+            margin-top: 1.3rem;
+        }
+    }
+
     /* FOOTER */
     footer {
         display: grid;

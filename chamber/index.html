@@ -21,8 +21,9 @@
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-large.css">
 
-    <script src="/scripts/navigation.js" defer></script>
-    <script src="/scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,9 +59,28 @@
             </div>
             <div class="current-weather">
                 <h2>Current Weather</h2>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption>
+                        <ul>
+                            <li id="temp"></li>
+                            <li id="desc"></li>
+                            <li id="temp-max"></li>
+                            <li id="temp-min"></li>
+                            <li id="humidity"></li>
+                            <li id="sunrise"></li>
+                            <li id="sunset"></li>
+                        </ul>
+                    </figcaption>
+                </figure>
             </div>
-            <div class="weather-forecast">
+            <div class=" weather-forecast">
                 <h2>Weather Forecast</h2>
+                <ul>
+                    <li id="day1"></li>
+                    <li id="day2"></li>
+                    <li id="day3"></li>
+                </ul>
             </div>
         </section>
         <section class="spotlight"></section>
