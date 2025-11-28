@@ -131,6 +131,7 @@ header span {
 }
 
 .grid {
+
     #cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -238,6 +239,40 @@ header span {
     figure {
         display: grid;
         grid-template-columns: auto 1fr;
+    }
+}
+
+.spotlight {
+    padding: 0;
+
+    li {
+        list-style: none;
+        margin-bottom: .3rem;
+    }
+
+    h3 {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        padding: 10px;
+        border-radius: 8px;
+        width: auto;
+        margin: 0 0 1rem 0;
+    }
+
+    section {
+        background-color: var(--background-color2);
+        border-radius: 15px;
+        font-size: small;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    #business-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     }
 }
 
