@@ -277,7 +277,8 @@ header span {
 }
 
 /* JOIN */
-.form-h1 {
+#form-h1,
+#confirm-h1 {
     text-align: center;
     margin-top: 2.5rem;
 }
