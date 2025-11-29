@@ -23,7 +23,6 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/join.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,18 +47,20 @@
         </nav>
     </header>
     <main>
-        <h1 id="form-h1">Membership Application</h1>
+        <h1 class="form-h1">Membership Application</h1>
         <form method="GET" action="thankyou.html" class="confirm-page">
             <label>First Name* <input type="text" required name="fname" title="First Name"
                     autocomplete="given-name"></label>
             <label>Last Name* <input type="text" required name="lname" title="Last Name"
                     autocomplete="family-name"></label>
-            <label>Organizational Title <input type="text" name="organization" title="Organizational Title"
+            <label>Organizational Title <input type="text" name="org-title" title="Organizational Title"
                     autocomplete="organization-title"></label>
             <label>Email* <input type="email" required name="email" title="Email" autocomplete="email"
                     placeholder="example@gmail.com"></label>
-            <label>Mobile Phone Number* <input type="tel" required name="phone" title="Mobile Phone Number"
+            <label>Mobile Number* <input type="tel" required name="phone" title="Mobile Phone Number"
                     autocomplete="tel"></label>
+            <label>Organization Name* <input type="text" required name="org-name" title="Organization Name"
+                    autocomplete="organization"></label>
 
             <h2>Membership Level</h2>
             <div>

@@ -277,12 +277,13 @@ header span {
 }
 
 /* JOIN */
-#form-h1 {
+.form-h1 {
     text-align: center;
     margin-top: 2.5rem;
 }
 
-form {
+form,
+#results {
     margin: 0 auto;
     margin-bottom: 3rem;
     border-radius: 15px;
@@ -297,6 +298,10 @@ form {
     div {
         margin-bottom: .5rem;
     }
+}
+
+#results {
+    padding-bottom: 1rem;
 }
 
 label {
