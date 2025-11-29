@@ -276,6 +276,59 @@ header span {
     }
 }
 
+/* JOIN */
+#form-h1 {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+form {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    padding: 1rem 2rem .1rem 2rem;
+    background-color: var(--background-color);
+    max-width: 380px;
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    div {
+        margin-bottom: .5rem;
+    }
+}
+
+label {
+    display: block;
+    padding-top: .8rem;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    display: block;
+    margin-top: 0.4rem;
+    width: 100%;
+    min-height: 30px;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 2rem auto;
+    border: none;
+    background-color: #4a598c;
+    color: #fff;
+    border-radius: 6px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
 /* FOOTER */
 footer {
     display: block;

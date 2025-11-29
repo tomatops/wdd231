@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calauan Chamber of Commerce | Directory</title>
+    <title>Calauan Chamber of Commerce | Join</title>
     <meta name="description"
-        content="A list of local business and other organizations that belong to the chamber of commerce.">
+        content="Contains information about joining the chamber, membership level options and their perks, and a membership application form.">
     <meta name="author" content="Madelaine Thea Tirazona">
 
     <meta property="og:title" content="Calauan Chamber of Commerce">
     <meta property="og:description"
         content="A resource hub for businesses in the municipality of Calauan, providing information on local events, host networking opportunities, create business directories, and encourage local shopping.">
-    <meta property="og:image" content="https://tomatops.github.io/wdd231/chamber/images/calauan.webp">
+    <meta property="og:image" content="https://tomatops.github.io/wdd231/chamber/images/calauan.webp" />
     <meta property="og:url" content="https://tomatops.github.io/wdd231/chamber/directory.html">
 
     <link rel="icon" href="images/pineapple.ico">
@@ -23,7 +23,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,13 +48,32 @@
         </nav>
     </header>
     <main>
-        <div class="menu">
-            <button id="grid">𓃑</button>
-            <button id="list">≣</button>
-        </div>
-        <article class="grid">
-            <div id="cards"></div>
-        </article>
+        <h1 id="form-h1">Membership Application</h1>
+        <form method="GET" action="thankyou.html" class="confirm-page">
+            <label>First Name <input type="text" required name="fname" title="First Name"
+                    autocomplete="given-name"></label>
+            <label>Last Name <input type="text" required name="lname" title="Last Name"
+                    autocomplete="family-name"></label>
+            <label>Organizational Title <input type="text" name="organization" title="Organizational Title"
+                    autocomplete="organization-title"></label>
+            <label>Email <input type="email" required name="email" title="Email" autocomplete="email"
+                    placeholder="example@gmail.com"></label>
+            <label>Mobile Phone Number <input type="tel" required name="phone" title="Mobile Phone Number"
+                    autocomplete="tel"></label>
+
+            <h2>Membership Level</h2>
+            <div>
+                <label><input type="radio" name="membership" value="np" required> NP Membership (For non-profit
+                    organizations, no fee)</label>
+                <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+            </div>
+
+            <label>Business/Organization Description <textarea name="description"></textarea></label>
+
+            <input type="submit" value="Apply for Membership">
+        </form>
     </main>
     <footer>
         <div class="site">
@@ -64,11 +83,11 @@
             <p>(02) 3333 6566</p>
         </div>
         <div class="social">
-            <a href="https://github.com/tomatops" target="_blank"><img src="images/github.svg" alt="github logo"
+            <a href="https://github.com/tomatops" target="_blank"><img src="/images/github.svg" alt="github logo"
                     width="1" height="1"></a>
-            <a href="https://www.linkedin.com/in/mtheatirazona/" target="_blank"><img src="images/linkedin.svg"
+            <a href="https://www.linkedin.com/in/mtheatirazona/" target="_blank"><img src="/images/linkedin.svg"
                     alt="linkedin logo" width="1" height="1"></a>
-            <a href="https://www.behance.net/tomatops" target="_blank"><img src="images/behance.svg" alt="x logo"
+            <a href="https://www.behance.net/tomatops" target="_blank"><img src="/images/behance.svg" alt="x logo"
                     width="1" height="1"></a>
         </div>
         <div class="author">
