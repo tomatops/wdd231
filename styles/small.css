@@ -139,9 +139,50 @@ section img {
     gap: 10px;
 }
 
-#course-list p {
+#course-list button {
     background-color: var(--background-color);
     border-radius: 15px;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#course-list button:hover {
+    background-color: var(--accent-color);
+}
+
+dialog {
+    padding: 0;
+    border-radius: 15px;
+    border: none;
+    max-width: 600px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 50%);
+
+    h2 {
+        border-radius: 0;
+        padding-left: 1rem;
+    }
+
+    h3,
+    p {
+        padding: .2rem 1rem;
+    }
+}
+
+dialog button {
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    padding: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 50%)
 }
 
 /* FOOTER */
