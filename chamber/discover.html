@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calauan Chamber of Commerce</title>
     <meta name="description"
-        content="A list of local business and other organizations that belong to the chamber of commerce.">
+        content="Information about the area, locale history, current demographics, and current events.">
     <meta name="author" content="Madelaine Thea Tirazona">
 
     <meta property="og:title" content="Calauan Chamber of Commerce">
@@ -23,6 +23,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,14 +41,14 @@
         <nav id="nav-bar" class="navigation" aria-label="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="directory.html">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="#">Discover</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-
+        <div id="cards"></div>
     </main>
     <footer>
         <div class="site">
