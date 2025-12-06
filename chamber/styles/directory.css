@@ -363,10 +363,6 @@ input[type="submit"] {
     grid-area: image;
 }
 
-#areaCards img:hover {
-    box-shadow: 0 0 20px #000;
-}
-
 #areaCards address {
     grid-area: address;
 }
@@ -385,6 +381,11 @@ input[type="submit"] {
     margin-top: 1rem;
     grid-area: button;
     border-style: none;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 /* FOOTER */
