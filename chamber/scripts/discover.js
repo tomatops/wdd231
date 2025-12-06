@@ -1,13 +1,13 @@
 import { areaInterest } from "../data/interest.mjs";
 
-const cards = document.querySelector("#cards");
+const cards = document.querySelector("#areaCards");
 
 const displayAreas = (areas) => {
     areas.forEach((area) => {
         let card = document.createElement('section');
         let name = document.createElement('h2');
-        let image = document.createElement('image');
-        let address = document.createElement('p');
+        let image = document.createElement('img');
+        let address = document.createElement('address');
         let description = document.createElement('p');
         let button = document.createElement('button');
 

@@ -1,0 +1,12 @@
+@media only screen and (min-width: 38rem) {
+
+    /* DISCOVER */
+    #areaCards section {
+        grid-template-areas:
+            "name"
+            "image description"
+            "image address"
+            "button";
+    }
+
+}

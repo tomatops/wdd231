@@ -335,6 +335,63 @@ input[type="submit"] {
     font-size: 1rem;
 }
 
+/* DISCOVER */
+#areaCards {
+    margin: 2rem;
+}
+
+#areaCards section {
+    border-radius: 15px;
+    background-color: var(--background-color2);
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        "name"
+        "image"
+        "address"
+        "description"
+        "button";
+}
+
+#areaCards h2 {
+    grid-area: name;
+}
+
+#areaCards img {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    grid-area: image;
+}
+
+#areaCards img:hover {
+    box-shadow: 0 0 20px #000;
+}
+
+#areaCards address {
+    grid-area: address;
+}
+
+#areaCards p {
+    grid-area: description;
+}
+
+#areaCards button {
+    font-weight: bold;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    grid-area: button;
+    border-style: none;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
 /* FOOTER */
 footer {
     display: block;
