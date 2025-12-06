@@ -387,11 +387,6 @@ input[type="submit"] {
     border-style: none;
 }
 
-button:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-}
-
 /* FOOTER */
 footer {
     display: block;
