@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Think Palace</title>
+    <meta name="description"
+        content="ThinkPalace offers engaging online workshops for creators, innovators, and lifelong learners. With our expert instructors, each class is crafted to help you learn, experiment, and think in new ways.">
+    <meta name="author" content="Madelaine Thea Tirazona">
+
+    <meta property="og:title" content="Think Palace">
+    <meta property="og:description"
+        content="ThinkPalace offers engaging online workshops for creators, innovators, and lifelong learners. With our expert instructors, each class is crafted to help you learn, experiment, and think in new ways.">
+    <meta property="og:image" content="finalproject/images/reading.webp" />
+    <meta property="og:url" content="https://tomatops.github.io/wdd231/finalproject/index.html">
+
+    <link rel="icon" href="images/pineapple.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <img src="images/pineapple.ico" alt="site logo" width="1" height="1">
+            <span>Calauan Chamber of Commerce</span>
+            <button id="ham-btn" class="hamburger"></button>
+        </div>
+        <nav id="nav-bar" class="navigation" aria-label="navigation">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/calauan.webp" alt="Calauan landscape" loading="lazy">
+            <button id="join">Join Us!</button>
+        </section>
+        <h1>Home</h1>
+        <section class="info-cards">
+            <div class="events">
+                <h2>Events</h2>
+            </div>
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption>
+                        <ul>
+                            <li id="temp"></li>
+                            <li id="desc"></li>
+                            <li id="temp-max"></li>
+                            <li id="temp-min"></li>
+                            <li id="humidity"></li>
+                            <li id="sunrise"></li>
+                            <li id="sunset"></li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class=" weather-forecast">
+                <h2>Weather Forecast</h2>
+                <ul>
+                    <li id="day1"></li>
+                    <li id="day2"></li>
+                    <li id="day3"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="spotlight">
+            <div id="business-cards"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="site">
+            <p><strong>Chamber of Commerce</strong></p>
+            <p>Calauan, Laguna, Philippines</p>
+            <p>info@calauancc.org</p>
+            <p>(02) 3333 6566</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/tomatops" target="_blank"><img src="/images/github.svg" alt="github logo"
+                    width="1" height="1"></a>
+            <a href="https://www.linkedin.com/in/mtheatirazona/" target="_blank"><img src="/images/linkedin.svg"
+                    alt="linkedin logo" width="1" height="1"></a>
+            <a href="https://www.behance.net/tomatops" target="_blank"><img src="/images/behance.svg" alt="x logo"
+                    width="1" height="1"></a>
+        </div>
+        <div class="author">
+            <p>WDD231 Class Project</p>
+            <p>Madelaine Thea Tirazona</p>
+            <p>© <span id="currentyear"></span> Calauan Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
