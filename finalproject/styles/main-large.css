@@ -1,0 +1,49 @@
+:root {
+    --primary: #D9A441;
+    --secondary: #F2F2F2;
+    --accent: #3B246B;
+    --grey: #E0E0E0;
+    --grey2: #595959;
+    --text: #FFFFFF;
+    --text2: #1A1A1A;
+}
+
+@media only screen and (min-width: 32rem) {
+
+    /* NAVIGATION */
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 10px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        border: none;
+        align-items: center;
+
+        ul {
+            flex-direction: row;
+        }
+
+        a:hover {
+            color: var(--primary);
+        }
+
+        li.current {
+            font-weight: bold;
+            border-bottom: solid 3px var(--accent);
+        }
+    }
+
+    /* HOME */
+    .hero {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
