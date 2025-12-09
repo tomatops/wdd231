@@ -48,6 +48,10 @@ const displayWorkshops = (workshops) => {
         card.appendChild(session_duration);
         card.appendChild(price);
 
+        card.addEventListener("click", () => {
+            displayWorkshopDetails(workshop);
+        });
+
         cards.appendChild(card);
     });
 }
@@ -58,12 +62,84 @@ async function getWorkshopData() {
 
     displayWorkshops(workshops);
 
-    all.addEventListener("click", () => displayWorkshops(workshops));
-    arts.addEventListener("click", () => displayWorkshops(workshops.filter(workshop => workshop.category === "Creative Arts")));
-    design.addEventListener("click", () => displayWorkshops(workshops.filter(workshop => workshop.category === "Design")));
-    business.addEventListener("click", () => displayWorkshops(workshops.filter(workshop => workshop.category === "Business")));
-    tech.addEventListener("click", () => displayWorkshops(workshops.filter(workshop => workshop.category === "Tech")));
-    wellness.addEventListener("click", () => displayWorkshops(workshops.filter(workshop => workshop.category === "Wellness")));
+    all.addEventListener("click", () => {
+        displayWorkshops(workshops);
+        removeClass(all);
+    });
+
+    arts.addEventListener("click", () => {
+        displayWorkshops(workshops.filter(workshop => workshop.category === "Creative Arts"));
+        removeClass(arts);
+    });
+
+    design.addEventListener("click", () => {
+        displayWorkshops(workshops.filter(workshop => workshop.category === "Design"))
+        removeClass(design);
+    });
+
+    business.addEventListener("click", () => {
+        displayWorkshops(workshops.filter(workshop => workshop.category === "Business"))
+        removeClass(business);
+    });
+
+    tech.addEventListener("click", () => {
+        displayWorkshops(workshops.filter(workshop => workshop.category === "Tech"))
+        removeClass(tech);
+    });
+
+    wellness.addEventListener("click", () => {
+        displayWorkshops(workshops.filter(workshop => workshop.category === "Wellness"))
+        removeClass(wellness);
+    });
+}
+
+const removeClass = (category) => {
+    all.classList.remove("active");
+    arts.classList.remove("active");
+    design.classList.remove("active");
+    business.classList.remove("active");
+    tech.classList.remove("active");
+    wellness.classList.remove("active");
+
+    category.classList.add("active");
 }
 
 getWorkshopData();
+
+// DIALOG
+function displayWorkshopDetails(workshop) {
+    const workshopDetails = document.querySelector("#workshop-details");
+    workshopDetails.innerHTML = "";
+
+    workshopDetails.innerHTML = `
+        <section class="dialog1">
+            <h2>${workshop.name}</h2>
+            <button id="closeModal">×</button>
+        </section>
+        <section class="dialog2">
+            <h3>Overview</h3>
+            <p>${workshop.description}</p>
+
+            <h3>Schedule</h3>
+            <div class="dialog-schedule">
+                <p><span class="dialog-label">Start: </span>${workshop.start_date}</p>
+                <p><span class="dialog-label">End: </span>${workshop.end_date}</p>
+                <p>${workshop.time}</p>
+                <p>Every ${workshop.days}</p>
+                <p>📅 ${workshop.sessions} sessions</p>
+                <p>🕑 ${workshop.session_duration}</p>
+            </div>
+            <h3>Instructor</h3>
+            <div class="dialog-instructor">
+                <p>${workshop.instructor_intro}</p>
+            </div>
+        </section>
+        `;
+
+    workshopDetails.showModal();
+
+    const closeModal = workshopDetails.querySelector("#closeModal");
+    closeModal.addEventListener("click", () => {
+        workshopDetails.close();
+    });
+}

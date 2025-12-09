@@ -128,9 +128,13 @@ header {
     background-color: var(--accent);
     color: var(--text);
     border-radius: 8px;
-    padding: 10px;
+    padding: 10px 15px;
     margin: 1rem;
     font-weight: 500;
+
+    a {
+        color: var(--text);
+    }
 }
 
 .featured {
@@ -144,18 +148,21 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 0 10px;
+    margin: 2rem;
+    align-items: center;
 
     button {
         background-color: var(--secondary);
         background: none;
         padding: 10px 20px;
-        border: 2px solid var(--grey2);
+        border: 2px solid var(--grey);
         border-radius: 5px;
+        max-height: 44px;
     }
 
     .active {
         background-color: var(--text);
+        border: 2px solid var(--text);
     }
 }
 
@@ -208,6 +215,62 @@ header {
         font-size: 1.2rem;
         font-weight: bold;
         padding-bottom: 1rem;
+    }
+}
+
+/* DIALOG */
+dialog {
+    padding: 0;
+    background-color: var(--secondary);
+    border: none;
+    max-width: 600px;
+    box-shadow: var(--grey2) 0 0 10px;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 50%)
+}
+
+.dialog1 {
+    margin: 0;
+    background-color: var(--text);
+    box-shadow: var(--grey) 0 0 10px;
+    display: grid;
+    grid-template-columns: auto 44px;
+    padding: 0 1rem;
+
+    button {
+        border: none;
+        background: none;
+        color: var(--text2);
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
+.dialog2 {
+    margin: 0;
+    padding: 1rem 2rem;
+
+    h3 {
+        border-bottom: 2px solid var(--grey);
+    }
+
+    .dialog-schedule {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 10px;
+
+        .dialog-label {
+            font-weight: 600;
+        }
+
+        p {
+            margin: .3rem 0;
+            border: 2px solid var(--grey);
+            padding: 5px 10px;
+        }
     }
 }
 
