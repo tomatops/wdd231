@@ -157,7 +157,7 @@ header {
         border-radius: 8px;
         box-shadow: 0 0 8px var(--grey2);
         text-align: center;
-        max-width: max-content;
+        max-width: 350px;
     }
 
     p {
