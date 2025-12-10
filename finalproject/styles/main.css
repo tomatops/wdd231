@@ -137,9 +137,43 @@ header {
     }
 }
 
+#browse:hover {
+    background-color: var(--primary);
+}
+
+/* FEATURED */
 .featured {
     background-color: var(--text);
     margin: 0 auto;
+}
+
+#review-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    section {
+        background-color: var(--secondary);
+        border-radius: 8px;
+        box-shadow: 0 0 8px var(--grey2);
+        text-align: center;
+        max-width: max-content;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.label {
+    font-weight: bold;
+}
+
+#page-visits {
+    padding: 1rem;
+    max-width: max-content;
+    background-color: var(--grey);
+    margin-bottom: 0;
 }
 
 /* WORKSHOPS */

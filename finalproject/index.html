@@ -29,6 +29,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script type="module" src="scripts/featured.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,8 +61,10 @@
             </div>
             <img src="images/hero.webp" alt="site logo" width="580" height="350" loading="lazy">
         </section>
-        <section class="reviews">
+        <section class="featured">
             <h2>Reviews</h2>
+            <div id="review-cards"></div>
+            <p id="page-visits"><span class="label">Number of page visits: </span><span class="visits"></span></p>
         </section>
     </main>
     <footer>
