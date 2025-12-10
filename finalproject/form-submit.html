@@ -29,6 +29,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form-submit.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,38 +53,7 @@
         </nav>
     </header>
     <main>
-        <h1 id="form-title">Membership Application</h1>
-        <form method="GET" action="form-submit.html" class="confirm-page">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label>First Name<span class="required">* </span><input type="text" required name="fname"
-                        title="First Name" autocomplete="given-name"></label>
-                <label>Last Name<span class="required">* </span><input type="text" required name="lname"
-                        title="Last Name" autocomplete="family-name"></label>
-                <label>Email<span class="required">* </span><input type="email" required name="email" title="Email"
-                        autocomplete="email" placeholder="example@gmail.com"></label>
-                <label>Mobile Number <input type="tel" name="phone" title="Mobile Phone Number"
-                        autocomplete="tel"></label>
-                <label>Birthdate<span class="required">* </span><input type="date" required name="birthdate"
-                        title="Birthdate" autocomplete="bday"></label>
-            </fieldset>
-            <fieldset>
-                <legend>Preferred Categories</legend>
-                <label><input type="checkbox" name="category" value="arts"> Creative Arts</label>
-                <label><input type="checkbox" name="category" value="design"> Design</label>
-                <label><input type="checkbox" name="category" value="business"> Business</label>
-                <label><input type="checkbox" name="category" value="tech"> Tech</label>
-                <label><input type="checkbox" name="category" value="wellness"> Wellness</label>
-            </fieldset>
-            <fieldset>
-                <legend>Preferred Schedule</legend>
-                <label><input type="checkbox" name="schedule" value="morning"> Morning</label>
-                <label><input type="checkbox" name="schedule" value="afternoon"> Afternoon</label>
-                <label><input type="checkbox" name="schedule" value="evening"> Evening</label>
-            </fieldset>
-
-            <input type="submit" value="Sign Up">
-        </form>
+        <div id="results"></div>
     </main>
     <footer>
         <div class="footer">

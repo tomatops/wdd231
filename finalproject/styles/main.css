@@ -274,6 +274,94 @@ dialog {
     }
 }
 
+/* SIGN UP FORM */
+#form-title {
+    text-align: center;
+}
+
+#confirm-text {
+    color: var(--grey2);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+form {
+    background-color: var(--text);
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    max-width: 380px;
+    padding: 2rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 8px var(--grey);
+
+    fieldset {
+        border: none;
+        padding: .6rem 0;
+        margin: 1rem;
+
+    }
+
+    legend {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-left: .5rem;
+        padding-bottom: .1rem;
+        border-bottom: 2px solid var(--grey);
+    }
+
+    label {
+        display: block;
+        padding: .4rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"] {
+        display: block;
+        margin-top: 0.4rem;
+        width: 100%;
+        min-height: 30px;
+        padding: 0 5px;
+    }
+
+    input[type="checkbox"] {
+        transform: scale(1.2);
+        transform-origin: center;
+        margin-right: 5px;
+    }
+
+    input[type="submit"] {
+        display: block;
+        margin: 1rem auto;
+        width: 100px;
+        border: none;
+        background-color: var(--accent);
+        color: #fff;
+        border-radius: 6px;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    input[type="submit"]:hover {
+        background-color: var(--primary);
+        cursor: pointer;
+    }
+
+    .required {
+        color: red;
+    }
+}
+
+#results {
+    background-color: var(--text);
+    padding: 2rem;
+    max-width: 380px;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 0 8px var(--grey);
+}
+
 /* FOOTER */
 footer {
     display: block;
